@@ -1,0 +1,74 @@
+<!DOCTYPE html>  
+<!-- Para dizer qual versão do HTML estamo usando. 
+
+O Doctype HTML é uma declaração para informar ao navegador qual é a versão do HTML utilizada no arquivo. Essa declaração vem antes das tags HTML, portanto, geralmente é apresentada na primeira linha de um código. Hoje em dia, todos os navegadores suportam a versão mais nova do HTML."
+-->
+
+<html lang="pt-br"> <!-- Os elementos que formam o conteúdo da página são postos entre a tag de abertura <html> e a tag de fechamento </html> . O elemento <html> é também conhecido como o ELEMENTO RAIZ. -->
+
+    <head> <!-- Informações para o navegador -->
+        <meta charset="UTF-8">
+        <title> Produtos - Barbearia Alura</title> <!-- Título da página na aba do navegador -->
+        <link rel="stylesheet" href="./css/reset.css"> <!-- Link para arquivo css que reseta todas as configurações que um navegador automaticamente oferece -->
+        <link rel="stylesheet" href="./css/style.css">  <!-- Tag de chamada do CSS -->
+    </head>
+
+    <body><!-- Informações para a página -->
+        <header> <!-- Cabeçalho. ATENÇÃO > =/ de HEAD -->
+            <div class="caixa">
+                <h1><img src="./img/logo.png" alt="Logo da Barbearia Alura"></h1>
+                <nav> 
+                    <!-- O Elemento HTML de Navegação (<nav>) representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação. -->
+
+                    <ul><!--Tag de lista "não ordenada" onde a ordem não importa  -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <!-- <a> (O elemento <a> em HTML (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL.) -->
+
+
+                <!--  <ol>Tag de lista "ordenada" onde a ordem  importa  
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Contato</li>
+                </ol>-->
+        </header>
+
+        <main> 
+            <!-- O elemento <main> especifica o conteúdo principal e, consequentemente, de maior relevância dentro da página. Para ser considerada bem construída, uma página deve apresentar apenas um conteúdo principal. -->
+            <ul class="produtos">
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="./img/cabelo.jpg" alt="Silhueta de corte de cabelo masculino">
+                    <p class="produto-descricao"> Na tesoura ou máquina, como o cliente preferir</p>
+                    <p class="produto-preco">R$ 25,00</p>
+                </li>
+                
+                <li>
+                    <h2>Barba</h2>
+                    <img src="./img/barba.jpg" alt="Silhueta de bigode e barba">
+                    <p class="produto-descricao">Corte e desenho profissional de barba</p>
+                    <p class="produto-preco">R$ 18,00 </p>
+                </li>
+                
+                <li>
+                    <h2>Cabelo+Barba</h2>
+                    <img src="./img/cabelo+barba.jpg" alt="Silhueta de corte cabelo, bigote e barba">
+                    <p class="produto-descricao">Pacote completo de cabelo e barba</p>
+                    <p class="produto-preco">R$ 35,00</p>
+                </li>
+            </ul>
+      
+        </main>
+
+        <footer>
+            <img src="./img/logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2021</p>
+        </footer>
+
+    </body>
+
+</html>
